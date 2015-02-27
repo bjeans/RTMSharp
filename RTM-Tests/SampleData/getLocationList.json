@@ -1,0 +1,16 @@
+{
+    "rsp": {
+        "stat": "ok",      
+         "locations": {
+            "location": [
+                { "id": "708748", "name": "Costco", "longitude": "-80.391533374786", "latitude": "43.407261128334", "zoom": "16", "address": "", "viewable": "1" },
+                { "id": "735696", "name": "Home Depot", "longitude": "-80.326151847839", "latitude": "43.406621986929", "zoom": "16", "address": "", "viewable": "1" },
+                { "id": "739746", "name": "Metro", "longitude": "-80.303921699524", "latitude": "43.393104905433", "zoom": "15", "address": "", "viewable": "1" },
+                { "id": "755266", "name": "Radioworld", "longitude": "-79.530372619629", "latitude": "43.773216565656", "zoom": "16", "address": "", "viewable": "1" },
+                { "id": "736344", "name": "Shoppers Drug Mart", "longitude": "-80.302848815918", "latitude": "43.391732760883", "zoom": "15", "address": "", "viewable": "1" },
+                { "id": "715064", "name": "Walmart", "longitude": "-80.327332019806", "latitude": "43.410565849471", "zoom": "16", "address": "", "viewable": "1" },
+                { "id": "739745", "name": "Zehrs", "longitude": "-80.315809249878", "latitude": "43.391732760883", "zoom": "15", "address": "", "viewable": "1" }
+            ]
+        }
+    }
+}

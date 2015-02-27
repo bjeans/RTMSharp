@@ -1,0 +1,32 @@
+{
+    "rsp": {
+        "stat": "ok",
+        "lists": {
+            
+            "list": [
+                { "id": "11001183", "name": "Inbox", "deleted": "0", "locked": "1", "archived": "0", "position": "-1", "smart": "0", "sort_order": "0" },
+                { "id": "11001187", "name": "Sent", "deleted": "0", "locked": "1", "archived": "0", "position": "1", "smart": "0", "sort_order": "0" },
+                { "id": "11001188", "name": "All Tasks", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "1", "filter": "" },
+                { "id": "15146700", "name": "Groceries", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "0", "sort_order": "0" },
+                { "id": "15467066", "name": "Wish List", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "0", "sort_order": "0" },
+                { "id": "16109294", "name": "Birthday / Anniversary", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "0", "sort_order": "0" },
+                { "id": "16317824", "name": "Recurring", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(status:incomplete AND isRepeating:true)" },
+                { "id": "16317831", "name": "Next 7 Days", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(status:incomplete AND (dueBefore:today OR dueWithin:\"7 days of today\"))" },
+                { "id": "16719868", "name": "Today or Tomorrow", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(due:Tomorrow OR due:Today)" },
+                { "id": "18026846", "name": "_Overdue", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(dueBefore:today)" },
+                { "id": "18144943", "name": "UnTagged", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(isTagged:false)" },
+                { "id": "18145208", "name": "@Home", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(tag:home)" },
+                { "id": "31302677", "name": "Work", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "0", "sort_order": "0" },
+                { "id": "33555185", "name": "_Backlog", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "0", "sort_order": "1" },
+                { "id": "33557185", "name": "_In Progress", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "0", "sort_order": "0" },
+                { "id": "36030618", "name": "_Someday", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(due:never AND priority:none)" },
+                { "id": "36030642", "name": "Important", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(priority:1 OR priority:2 OR priority:3)" },
+                { "id": "36030655", "name": "Urgent", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(dueBefore:\"3 days\")" },
+                { "id": "36030656", "name": "Q1", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(list:Important AND list:Urgent)" },
+                { "id": "36030657", "name": "Q2", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(list:Important AND NOT list:Urgent)" },
+                { "id": "36030664", "name": "Q3", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(list:Urgent AND NOT list:Important)" },
+                { "id": "36030666", "name": "Q4", "deleted": "0", "locked": "0", "archived": "0", "position": "0", "smart": "1", "sort_order": "0", "filter": "(NOT (list:Important OR list:Urgent))" }
+            ]
+        }
+    }
+}
