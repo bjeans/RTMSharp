@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using Newtonsoft.Json;
 using RTMSharp;
+using System.Collections.Generic;
 
 namespace RTM_Tests
 {
@@ -41,15 +42,26 @@ namespace RTM_Tests
         [TestMethod]
         public void ParseLists()
         {
-            RootObject Lists = JsonConvert.DeserializeObject<RootObject>(lists_json);
-            Assert.IsTrue(Lists.isValid());
+            RootObject ro = JsonConvert.DeserializeObject<RootObject>(lists_json);
+            Assert.IsTrue(ro.isValid());
+            RTMLists Lists = ro.getLists();
+            Assert.IsTrue(Lists.allLists.Count == 22);
+            Assert.IsTrue(Lists.getListByName("Inbox").id == "11001183");
+            Assert.IsTrue(Lists.getListById("11001187").name == "Sent");
+            Assert.IsTrue(Lists.getListByName(null) == null);
+            Assert.IsTrue(Lists.getListById(null) == null);
+            Assert.IsTrue(Lists.getListByName("") == null);
+            Assert.IsTrue(Lists.getListById("") == null);
         }
-
+        
         [TestMethod]
         public void ParseLocations()
         {
-            RootObject Locations = JsonConvert.DeserializeObject<RootObject>(locationList_json);
-            Assert.IsTrue(Locations.isValid());
+            RootObject ro = JsonConvert.DeserializeObject<RootObject>(locationList_json);
+            Assert.IsTrue(ro.isValid());
+            List<RTMLocation> Locations = ro.getLocations();
+            Assert.IsTrue(Locations.Count == 7);
+            
         }
 
         [TestMethod]
@@ -57,6 +69,24 @@ namespace RTM_Tests
         {
             RootObject Tasks = JsonConvert.DeserializeObject<RootObject>(taskList_json);
             Assert.IsTrue(Tasks.isValid());
+            
+        }
+
+        [TestMethod]
+        public void ParseTasksandTestLocations()
+        {
+            RootObject ro = JsonConvert.DeserializeObject<RootObject>(taskList_json);
+            Assert.IsTrue(ro.isValid());
+            List<RTMLocation> Locations = ro.getLocations();
+            Assert.IsTrue(Locations == null);
+        }
+
+        [TestMethod]
+        public void TasksWithEstimates()
+        {
+            RootObject Tasks = JsonConvert.DeserializeObject<RootObject>(taskList_json);
+            List<Tasksery> _tasksWithEstimates = new List<Tasksery>();
+            
         }
 
         [TestCleanup]
